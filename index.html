@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="wall">
+        <h1>F1</h1>
+
+        <p>Informações sobre os pilotos da f1</p>
+      </section>
+      <section class="classification">
+        <!-- Formulário -->
+        <div class="form">
+          <input type="text" id="year" placeholder="Ano da Temporada" />
+          <input type="submit" onclick="send()" />
+        </div>
+
+        <br />
+        <br />
+
+        <!-- Tabela -->
+        <div class="container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Pontuação</th>
+              </tr>
+            </thead>
+            <tbody id="tabela"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
