@@ -10,15 +10,38 @@
   <body>
     <div class="main">
       <section class="wall">
-        <h1>F1</h1>
+        <div class="image"></div>
 
-        <p>Informações sobre os pilotos da f1</p>
+        <div class="ContentTitle">
+          <p>Por Junin</p>
+          <h1>FÓRMULA 1</h1>
+          <p>
+            Busque e visualize a classificação de pilotos na fórmula 1 deste ano
+            e de anos anteriores.
+          </p>
+          <a href="#year"> <ion-icon name="arrow-down-outline"></ion-icon> </a>
+        </div>
       </section>
       <section class="classification">
         <!-- Formulário -->
+        <h1>Buscar classificação</h1>
+        <p>De 1950 a 2023</p>
         <div class="form">
-          <input type="text" id="year" placeholder="Ano da Temporada" />
-          <input type="submit" onclick="send()" />
+          <input
+            type="number"
+            id="year"
+            placeholder="Ano da Temporada"
+            class="inputForm"
+            min="1950"
+            max="2023"
+            required
+          />
+          <input
+            type="submit"
+            onclick="send()"
+            value="Pesquisar"
+            class="submitButton"
+          />
         </div>
 
         <br />
@@ -42,5 +65,13 @@
 
     <script src="./js/index.js"></script>
     <script src="./index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

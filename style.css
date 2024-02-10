@@ -8,3 +8,170 @@ Outfit
 Cinzel - Medieval
 Kalam - mais descontraido
 */
+
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+font-family: 'Outfit', sans-serif;
+font-family: 'Rubik Mono One', monospace;
+font-family: 'Unbounded', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:wght@300;400&family=Noto+Sans+Mono:wght@300;400;500;600&family=Outfit:wght@300;400&family=Rubik+Mono+One&family=Unbounded:wght@200;300;400&display=swap");
+
+/* Cores */
+:root {
+  --vermelho: #f71735;
+  --vermelho2: #d90429;
+  --fundo: #03071e;
+  --fundo2: #090809;
+}
+
+body {
+  background: var(--fundo2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.wall {
+  height: 100vh;
+  background-color: var(--vermelho2);
+}
+.image {
+  background-image: url(./imgs/mercedes2.png);
+  height: 100%;
+  background-size: cover;
+  opacity: 0.68;
+  position: relative;
+}
+
+/* Título */
+
+.ContentTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContentTitle h1 {
+  font-size: 150px;
+  font-family: "Unbounded", sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.ContentTitle p {
+  text-align: center;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 18px;
+}
+
+.ContentTitle a {
+  color: #ffffff;
+}
+
+/* Ícone */
+
+ion-icon {
+  font-size: 60px;
+  animation: caibebe 2s ease-in-out alternate infinite;
+  margin-top: 25px;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+}
+
+@keyframes caibebe {
+  to {
+    transform: translateY(30px);
+  }
+}
+
+.classification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.classification h1 {
+  font-size: 30px;
+  font-family: "Unbounded", sans-serif;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.classification p {
+  font-size: 15px;
+  font-family: "Unbounded", sans-serif;
+  color: #ffffff;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.inputForm {
+  min-height: 50px;
+  min-width: 200px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid var(--vermelho2);
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.submitButton {
+  min-height: 50px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: var(--vermelho);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.inputForm:focus,
+.inputForm:focus-visible {
+  border-color: var(--vermelho2);
+  outline: none;
+}
+
+/* Tabela */
+
+.container {
+  font-family: "Noto Sans Mono", monospace;
+  color: #ffffff;
+  border: 1px solid var(--vermelho);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.table,
+th,
+td {
+  padding: 1rem;
+}
