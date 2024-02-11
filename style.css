@@ -175,3 +175,143 @@ th,
 td {
   padding: 1rem;
 }
+
+/* Responsividade */
+
+@media (max-width: 1100px) {
+  .ContentTitle h1 {
+    font-size: 120px;
+    font-family: "Unbounded", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .ContentTitle h1 {
+    font-size: 100px;
+    font-family: "Unbounded", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .ContentTitle p {
+    text-align: center;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ContentTitle {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ContentTitle h1 {
+    font-size: 80px;
+    font-family: "Unbounded", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  ion-icon {
+    font-size: 50px;
+    animation: caibebe 2s ease-in-out alternate infinite;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 580px) {
+  .ContentTitle {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .ContentTitle h1 {
+    font-size: 60px;
+    font-family: "Unbounded", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .ContentTitle p {
+    text-align: center;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 14px;
+  }
+
+  .classification h1 {
+    font-size: 24px;
+    font-family: "Unbounded", sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+  .classification p {
+    font-size: 14px;
+    font-family: "Unbounded", sans-serif;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 420px) {
+  .ContentTitle {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .ContentTitle h1 {
+    font-size: 48px;
+    font-family: "Unbounded", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .ContentTitle p {
+    text-align: center;
+    font-family: "Noto Sans Mono", monospace;
+    font-size: 12px;
+  }
+
+  .classification h1 {
+    font-size: 20px;
+    font-family: "Unbounded", sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+  .classification p {
+    font-size: 12px;
+    font-family: "Unbounded", sans-serif;
+    color: #ffffff;
+  }
+
+  ion-icon {
+    font-size: 50px;
+    animation: caibebe 2s ease-in-out alternate infinite;
+    margin-top: 25px;
+  }
+
+  .table,
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
